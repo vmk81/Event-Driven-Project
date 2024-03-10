@@ -5,7 +5,9 @@ This Project is to demonstrate how we can build an Event driven architecture usi
 
 If a file is uploaded to the S3 bucket(PutObject), then the EventBridge will call a Lambda Function which will print an output saying that a new file has been uploaded. This output can be verified in CloudWatch.  
 If a file is deleted from the S3 bucket(DeleteObject), then the EventBridge will call an SNS Topic which will send an email to the email address provided in the subscription.
+
 This project will involve the following sections.  
+
 Section 1: Create an S3 bucket.  
 Section 2: Create a Lambda Function  
 Section 3: Create an SNS Topic  
