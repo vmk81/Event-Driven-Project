@@ -45,6 +45,16 @@ Section 5: Test the Output
 11. On the following page, select 'AWS service' and select SNS topic as select target. Select the SNS topic that was created in step 5 and then click on 'Next'.Scroll to the bottom and click on 'Create rule' button.  
 ![11-EventBridgeRule for SNS-2](https://github.com/vmk81/Event-Driven-Project/assets/157844406/d6c24d2f-698a-4dc4-b8e4-eabf19aa76e1)
 
-  
+### Section 5: Test the Output  
+12. To test the output for Lambda, we will upload a file to the S3 bucket that was created in step 1. Open a powershell prompt on your desktop and upload a file to the S3 bucket using awscli(Red Arrow in the below screenshot). Go back to the S3 bucket on the console and check if the file got uploaded. Take a note of the time of upload(Black Arrow).
+![12-Lambda Testing-1](https://github.com/vmk81/Event-Driven-Project/assets/157844406/7ece0fed-67f5-480f-94ff-ef833ca487b7)
+13. Go back to Lambda page and select 'Monitor' tab(Red Arrow in the below screenshot) and click on 'View CloudWatch Logs'. Under Logstreams we can see the latest log stream with the same timestamp (Black Arrow)as the time of upload from step 12. If we open the log stream we can see the print output from our Lambda function(Blue Arrow).
+![13-Lambda Testing - 2](https://github.com/vmk81/Event-Driven-Project/assets/157844406/5a40e1db-8fc2-424a-b2da-263c18cc9d61)  
+14. To test the output for SNS, we will delete the file from the S3 bucket that was uploaded in step 12. Open a powershell prompt on your desktop and delete the file from the S3 bucket using awscli(Red Arrow in the below screenshot). Go back to the S3 bucket on the console and check if the file got deleted. Log into the email account that was provided in step 6 and in the inbox we can see the email notification from AWS regarding the object deletion(Black Arrow).
+![14-SNS Testing -1](https://github.com/vmk81/Event-Driven-Project/assets/157844406/b00f0301-9151-4713-924d-2c3e8bec3b4c)
+
+
+ 
+
 
 
