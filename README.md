@@ -33,13 +33,18 @@ Section 5: Test the Output
 6. On the following page click on 'Create subscription' botton. Choose Email as the protocol and enter the email address that should receive the notifications. Then click 'Create subscription'.
 ![3-Create SNS Subscription](https://github.com/vmk81/Event-Driven-Project/assets/157844406/0dc3d88e-d88b-4e92-89d6-a93d9a21b09a)
 
-### Section 4: Create Event Buses in EventBridge.  
-7. Navigate to the EventBridge service. Select EventBridge Rule and Ccick on 'Create rule'.Provide the rule name(Red Arrow in the below screenshot). Select 'Rule with an event pattern' option(Black Arrow) under Rule Type.
+### Section 4: Create Event Buses for Lambda and SNS in EventBridge.  
+7. Navigate to the EventBridge service. Select EventBridge Rule and Click on 'Create rule'.Provide the rule name(Red Arrow in the below screenshot). Select 'Rule with an event pattern' option(Black Arrow) under Rule Type.
 ![7-EventBridgerule for Lambda](https://github.com/vmk81/Event-Driven-Project/assets/157844406/2d0f734b-c8d5-46c3-b3d1-26575e0d1bd1)
 8. In the Event pattern section, select 'Custom pattern'(Red Arrow in the below screenshot).Copy the JSON code for object creation and click on 'Next'.  
 ![8-EventBridgerule for Lambda -2](https://github.com/vmk81/Event-Driven-Project/assets/157844406/d6df9243-98bf-404e-8193-7d0b807537be)
 9. On the following page, select 'AWS service' and select Lambda Function as select target. Select the Lambda function that was created in step 3 and then click on 'Next'.Scroll to the bottom and click on 'Create rule' button
 ![9-EventBridgerule for Lambda -3](https://github.com/vmk81/Event-Driven-Project/assets/157844406/7a93d2b1-3872-4e84-a9dc-917dfe9f1215)
+10. Go back to EventBridge Rule page and Click on 'Create rule'.Provide the rule name for SNS(Red Arrow in the below screenshot). In the Event pattern section, select 'Custom pattern'(Black Arrow).Copy the JSON code for object deletion and click on 'Next'.
+![10-EventBridgeRule for SNS](https://github.com/vmk81/Event-Driven-Project/assets/157844406/44125be8-dc88-4348-9829-00daaa40c437)  
+11. On the following page, select 'AWS service' and select SNS topic as select target. Select the SNS topic that was created in step 5 and then click on 'Next'.Scroll to the bottom and click on 'Create rule' button.  
+![11-EventBridgeRule for SNS-2](https://github.com/vmk81/Event-Driven-Project/assets/157844406/d6c24d2f-698a-4dc4-b8e4-eabf19aa76e1)
+
   
 
 
